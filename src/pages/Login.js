@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Redirect } from 'react-router';
-import weCookLogo from '../images/weCookLogo.png';
+import manddLogo from '../images/mandd_3_sf.png';
+import '../App.css';
 
 function Login() {
   const [login, setLogin] = useState({ email: '', password: '' });
@@ -35,11 +36,17 @@ function Login() {
     setShouldRedirect(true);
   }
 
+  const styleText = {
+    fontWeight: 'bold',
+    color: 'white',
+    textShadow: '0 0 6px grey',
+  };
+
   return (
-    <main style={ { textAlign: 'center' } }>
+    <main className="main-login">
       { shouldRedirect && <Redirect to="/comidas" /> }
-      <img src={ weCookLogo } alt="logo" style={ { width: '300px' } } />
-      <h2 style={ { fontWeight: 'bold' } }>Login</h2>
+      <img src={ manddLogo } alt="logo" style={ { width: '280px' } } />
+      <h2 style={ styleText }>Login</h2>
       <Form className="container-login">
         <Form.Label htmlFor="id">
           <Form.Control

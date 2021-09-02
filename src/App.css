@@ -197,6 +197,12 @@ body {
   background-color: #eee;
 }
 
+.main-login {
+  background: url(./images/back.jpg) no-repeat center bottom;
+  background-size: 80%;
+  text-align: center;
+}
+
 @keyframes shake {
 
   0% {
