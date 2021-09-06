@@ -4,8 +4,8 @@
 } */
 
 body {
+  justify-content: center;
   background-color: rgba(242, 117, 7, .35);
-  min-height: 640px;
 }
 
 .button {

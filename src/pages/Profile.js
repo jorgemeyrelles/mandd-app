@@ -22,7 +22,7 @@ export default function Profile() {
           size="lg"
           type="button"
           data-testid="profile-done-btn"
-          onClick={ () => history.push('/receitas-feitas') }
+          onClick={ () => history.push('/mandd-app/receitas-feitas') }
         >
           Done recipes
         </Button>
@@ -32,7 +32,7 @@ export default function Profile() {
           size="lg"
           type="button"
           data-testid="profile-favorite-btn"
-          onClick={ () => history.push('/receitas-favoritas') }
+          onClick={ () => history.push('/mandd-app/receitas-favoritas') }
         >
           Favorite recipes
         </Button>
@@ -43,7 +43,7 @@ export default function Profile() {
           size="lg"
           type="button"
           data-testid="profile-logout-btn"
-          onClick={ () => { localStorage.clear(); history.push('/'); } }
+          onClick={ () => { localStorage.clear(); history.push('/mandd-app/'); } }
         >
           Exit
         </Button>

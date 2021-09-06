@@ -28,7 +28,7 @@ export default function DrinkExplorer() {
           size="lg"
           data-testid="explore-by-ingredient"
           type="button"
-          onClick={ () => history.push('/explorar/bebidas/ingredientes') }
+          onClick={ () => history.push('/mandd-app/explorar/bebidas/ingredientes') }
         >
           By Ingredients
         </Button>
@@ -38,7 +38,7 @@ export default function DrinkExplorer() {
           size="lg"
           data-testid="explore-surprise"
           type="button"
-          onClick={ () => history.push(`/bebidas/${idRandomDrink}`) }
+          onClick={ () => history.push(`/mandd-app/bebidas/${idRandomDrink}`) }
         >
           Surprise Me!
         </Button>

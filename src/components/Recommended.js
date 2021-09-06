@@ -5,18 +5,28 @@ import '../App.css';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 
 function Recommended({ value, type }) {
   const magicN = 6;
+  const history = useHistory();
+  const styleCard = {
+    background: 'none',
+    opacity: 'none',
+    border: 'none',
+  };
   const sixCards = value.map((e) => e).slice(0, magicN);
   const kind = () => {
     if (type === 'meal') {
       return (
         Object.entries(sixCards).map((e, i) => (
-          <a
-            style={ { backgroundColor: 'white' } }
-            href={ `/bebidas/${e[1].idDrink}` }
+          <div
+            role="button"
+            style={ styleCard }
+            onClick={ () => history.push(`/mandd-app/bebidas/${e[1].idDrink}`) }
+            onKeyPress={ () => history.push(`/mandd-app/bebidas/${e[1].idDrink}`) }
             key={ i }
+            tabIndex="0"
           >
             <div data-testid={ `${i}-recomendation-card` } key={ i }>
               <img
@@ -32,13 +42,20 @@ function Recommended({ value, type }) {
                 { e[1].strDrink }
               </div>
             </div>
-          </a>
+          </div>
         ))
       );
     }
     return (
       Object.entries(sixCards).map((e, i) => (
-        <a href={ `/comidas/${e[1].idMeal}` } key={ i }>
+        <div
+          role="button"
+          style={ styleCard }
+          onClick={ () => history.push(`/mandd-app/comidas/${e[1].idMeal}`) }
+          onKeyPress={ () => history.push(`/mandd-app/comidas/${e[1].idMeal}`) }
+          tabIndex="0"
+          key={ i }
+        >
           <div data-testid={ `${i}-recomendation-card` } key={ i }>
             <img
               style={ { borderRadius: '5px' } }
@@ -53,7 +70,7 @@ function Recommended({ value, type }) {
               { e[1].strMeal }
             </div>
           </div>
-        </a>
+        </div>
       ))
     );
   };

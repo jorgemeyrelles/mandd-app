@@ -18,13 +18,13 @@ function Footer() {
       } }
       data-testid="footer"
     >
-      <a href="/comidas">
+      <a href="/mandd-app/comidas">
         <img data-testid="food-bottom-btn" src={ mealIcon } alt="food icon" />
       </a>
-      <a href="/explorar">
+      <a href="/mandd-app/explorar">
         <img data-testid="explore-bottom-btn" src={ exploreIcon } alt="explore icon" />
       </a>
-      <a href="/bebidas">
+      <a href="/mandd-app/bebidas">
         <img data-testid="drinks-bottom-btn" src={ drinkIcon } alt="drink icon" />
       </a>
     </Navbar>

@@ -15,6 +15,10 @@ function Login() {
       [name]: value,
     });
   }
+  const msg = 'Welcome\nChange the screem size to mobile mode by "inspection" tool.\nTks';
+  useEffect(() => {
+    alert(msg);
+  }, []);
 
   useEffect(() => {
     const { email, password } = login;
@@ -44,7 +48,7 @@ function Login() {
 
   return (
     <main className="main-login">
-      { shouldRedirect && <Redirect to="/comidas" /> }
+      { shouldRedirect && <Redirect to="/mandd-app/comidas" /> }
       <img src={ manddLogo } alt="logo" style={ { width: '280px' } } />
       <h2 style={ styleText }>Login</h2>
       <Form className="container-login">
@@ -63,7 +67,7 @@ function Login() {
             id="password"
             type="password"
             data-testid="password-input"
-            placeholder="Senha"
+            placeholder="Password"
             name="password"
             onChange={ handleChange }
           />
@@ -76,7 +80,7 @@ function Login() {
           disabled={ disabled }
           onClick={ submitBtn }
         >
-          Entrar
+          Enter
         </Button>
       </Form>
     </main>

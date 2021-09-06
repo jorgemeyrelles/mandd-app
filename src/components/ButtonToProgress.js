@@ -11,7 +11,7 @@ function ButtonToProgress(props) {
   const [toRedirect, setToRedirect] = useState(false);
   const [progress, setProgress] = useState(false);
   const [start, setStart] = useState(false);
-  const path = window.location.pathname.split('/')[2];
+  const path = window.location.pathname.split('/')[3];
   const inProgress = localStorage.getItem('inProgressRecipes');
   const doneRecipes = localStorage.getItem('doneRecipes');
 
@@ -45,10 +45,10 @@ function ButtonToProgress(props) {
       // console.log(doneRecipes.includes(path), doneRecipes);
       setStart(true);
     }
-  }, [path, doneRecipes, inProgress]);
+  }, [path]);
 
   const handleClick = () => {
-    if (window.location.pathname.split('/')[1] === 'bebidas') {
+    if (window.location.pathname.split('/')[2] === 'bebidas') {
       setType('bebidas');
     }
     return setToRedirect(true);
@@ -69,7 +69,7 @@ function ButtonToProgress(props) {
         {
           toRedirect
             && <Redirect
-              to={ `/${type}/${window.location.pathname.split('/')[2]}/in-progress` }
+              to={ `/mandd-app/${type}/${path}/in-progress` }
               state={ mealDetail || drinkDetail }
             />
         }

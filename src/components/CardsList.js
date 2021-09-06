@@ -61,7 +61,7 @@ export default function CardsList(props) {
         textAlign: 'center',
       } }
     >
-      Não há itens.
+      There is no items yet...
     </div>);
 }
 

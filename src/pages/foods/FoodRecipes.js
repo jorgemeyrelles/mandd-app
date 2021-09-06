@@ -15,13 +15,13 @@ export default function FoodRecipes() {
           className="container-header"
           style={ { justifyContent: 'space-between', borderRadius: '0 0 15px 15px' } }
         >
-          <h3 style={ { marginBottom: '0', color: '#e9e8e8' } }>
+          <h3 style={ { marginBottom: '0', color: '#e9e8e8', fontWeight: 'bold' } }>
             Food details
           </h3>
           <button
             type="button"
             style={ { background: 'none', opacity: 'none', border: 'none' } }
-            onClick={ () => history.push('/comidas') }
+            onClick={ () => history.push('/mandd-app/comidas') }
           >
             <img src="https://icongr.am/entypo/home.svg?size=40&&color=e9e8e8" alt="icon home" />
           </button>

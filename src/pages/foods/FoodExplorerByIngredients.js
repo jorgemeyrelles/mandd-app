@@ -6,7 +6,7 @@ import CardsListByIngredient from '../../components/CardsListByIngredient';
 export default function FoodExplorerByIngredients() {
   return (
     <>
-      <Header title="Explore by Ingredients" />
+      <Header title="By Ingredients" />
       <CardsListByIngredient />
       <Footer />
     </>

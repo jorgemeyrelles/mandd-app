@@ -11,7 +11,7 @@ import fetchByFilter from '../services/data';
 
 export default function RecipeInProgress({ location }) {
   const [recipe, setRecipe] = useState();
-  const recipeId = window.location.pathname.split('/')[2];
+  const recipeId = window.location.pathname.split('/')[3];
   const isMeal = (window.location.pathname).includes('comidas');
   const { state } = location;
 
@@ -61,7 +61,7 @@ export default function RecipeInProgress({ location }) {
                 category={ recipe.strCategory }
               />
             </Card.Text>
-            <Card.Subtitle>Receita</Card.Subtitle>
+            <Card.Subtitle>Recipe</Card.Subtitle>
             <Card.Text data-testid="instructions">{ recipe.strInstructions }</Card.Text>
             <ButtonFinish recipe={ recipe } />
           </Card.Body>

@@ -38,8 +38,8 @@ export default function Header(props) {
         <div
           style={ { width: '30px' } }
           role="button"
-          onKeyPress={ () => history.push('/perfil') }
-          onClick={ () => history.push('/perfil') }
+          onKeyPress={ () => history.push('/mandd-app/perfil') }
+          onClick={ () => history.push('/mandd-app/perfil') }
           tabIndex="0"
         >
           <img
@@ -50,7 +50,7 @@ export default function Header(props) {
         </div>
         <h3
           data-testid="page-title"
-          style={ { margin: 'auto' } }
+          style={ { margin: 'auto', fontWeight: 'bold' } }
         >
           { title }
         </h3>

@@ -63,7 +63,7 @@ export default function DoneRecipes() {
         { (filteredRecipes.length > 0 && Object.keys(filteredRecipes[0]).length !== 0)
           ? filteredRecipes.map((recipe, index) => (
             <CardsRecipesDone recipe={ recipe } index={ index } key={ index } />))
-          : <div>Sem receitas feitas</div>}
+          : <div>Any one recipe have done yet</div>}
       </section>
     </div>
   );

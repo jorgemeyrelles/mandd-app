@@ -6,7 +6,7 @@ import CardsListByIngredient from '../../components/CardsListByIngredient';
 export default function DrinkExplorerByIngredients() {
   return (
     <>
-      <Header title="Explorar Ingredientes" />
+      <Header title="By Ingredients" />
       <CardsListByIngredient />
       <Footer />
     </>

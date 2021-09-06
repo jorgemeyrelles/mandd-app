@@ -8,7 +8,7 @@ export function InProgressProvider({ children }) {
   const [measurementsArray, setMeasurementsArray] = useState([]);
   const [ingsChecked, setIngsChecked] = useState([]);
   const [enableFinishBtn, setEnableFinishBtn] = useState(false);
-  const recipeId = window.location.pathname.split('/')[2];
+  const recipeId = window.location.pathname.split('/')[3];
   const isMeal = (window.location.pathname).includes('comidas');
 
   const setFinishButton = () => {

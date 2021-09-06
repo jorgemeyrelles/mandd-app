@@ -12,7 +12,7 @@ function DrinkDetailCard() {
   const [rec, setRec] = useState([]);
   const [min, setMin] = useState([]);
 
-  const path = window.location.pathname.split('/')[2];
+  const path = window.location.pathname.split('/')[3];
 
   const drinkToDetail = 'https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=';
   const foodRecomend = 'https://www.themealdb.com/api/json/v1/1/search.php?s=';
@@ -20,7 +20,7 @@ function DrinkDetailCard() {
   useEffect(() => {
     const getUrlDrink = async () => {
       const drink = await fetch(`${drinkToDetail}${window.location.pathname
-        .split('/')[2]}`);
+        .split('/')[3]}`);
       const response = drink.json().then((res) => setDrinkDetail(res.drinks[0]));
       return response;
     };

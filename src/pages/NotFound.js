@@ -17,7 +17,7 @@ export default function NotFound() {
         style={ { textAlign: 'center', marginBottom: '40px' } }
       >
         <Button
-          onClick={ () => history.push('/') }
+          onClick={ () => history.push('/mandd-app/') }
         >
           Go back to Login
         </Button>

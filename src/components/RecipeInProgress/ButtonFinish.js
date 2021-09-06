@@ -61,12 +61,12 @@ export default function ButtonFinish(props) {
       : [newRecipeDone];
 
     localStorage.setItem('doneRecipes', JSON.stringify(itemToSave));
-    return history.push('/receitas-feitas');
+    return history.push('/mandd-app/receitas-feitas');
   };
 
   return (
     <Button
-      style={ { width: '100%', backgroundColor: '#4B2C0D' } }
+      style={ { width: '100%', backgroundColor: '#590202' } }
       type="button"
       data-testid="finish-recipe-btn"
       disabled={ !enableFinishBtn }

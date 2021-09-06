@@ -12,14 +12,15 @@ function MealDetailCard() {
   const [rec, setRec] = useState([]);
   const [min, setMin] = useState([]);
 
-  const path = window.location.pathname.split('/')[1] === 'comidas';
+  const path = window.location.pathname.split('/')[2] === 'comidas';
+  console.log(path);
   const foodToDetail = 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=';
   const drinkRecommend = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=';
 
   useEffect(() => {
     const getUrlMeal = async () => {
       const meal = await fetch(`${foodToDetail}${window.location.pathname
-        .split('/')[2]}`);
+        .split('/')[3]}`);
       const response = meal.json().then((res) => setMealDetail(res.meals[0]));
       return response;
     };

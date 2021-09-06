@@ -28,7 +28,7 @@ export default function FoodExplorer() {
           variant="dark"
           size="lg"
           type="button"
-          onClick={ () => history.push('/explorar/comidas/ingredientes') }
+          onClick={ () => history.push('/mandd-app/explorar/comidas/ingredientes') }
           data-testid="explore-by-ingredient"
         >
           By Ingredients
@@ -40,7 +40,7 @@ export default function FoodExplorer() {
           size="lg"
           data-testid="explore-by-area"
           type="button"
-          onClick={ () => history.push('/explorar/comidas/area') }
+          onClick={ () => history.push('/mandd-app/explorar/comidas/area') }
         >
           By Country
         </Button>
@@ -51,7 +51,7 @@ export default function FoodExplorer() {
           size="lg"
           data-testid="explore-surprise"
           type="button"
-          onClick={ () => history.push(`/comidas/${idRandomFood}`) }
+          onClick={ () => history.push(`/mandd-app/comidas/${idRandomFood}`) }
         >
           Surprise Me!
         </Button>

@@ -61,7 +61,7 @@ export default function Cards(props) {
     <Card
       style={ styleCard }
       data-testid={ `${index}-recipe-card` }
-      onClick={ () => history.push(`/${tipo}/${recipe[shortName]}`) }
+      onClick={ () => history.push(`/mandd-app/${tipo}/${recipe[shortName]}`) }
     >
       <Card.Img
         variant="top"

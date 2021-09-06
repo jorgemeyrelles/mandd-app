@@ -16,7 +16,7 @@ export default function Explorer() {
           className="button-style"
           type="button"
           data-testid="explore-food"
-          onClick={ () => history.push('/explorar/comidas') }
+          onClick={ () => history.push('/mandd-app/explorar/comidas') }
         >
           Explore Foods
         </Button>
@@ -26,7 +26,7 @@ export default function Explorer() {
           className="button-style"
           type="button"
           data-testid="explore-drinks"
-          onClick={ () => history.push('/explorar/bebidas') }
+          onClick={ () => history.push('/mandd-app/explorar/bebidas') }
         >
           Explore Drinks
         </Button>
