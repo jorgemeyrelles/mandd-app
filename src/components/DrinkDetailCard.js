@@ -60,34 +60,60 @@ function DrinkDetailCard() {
     return undefined;
   }).filter((i) => i !== undefined);
 
+  const styleDiv = {
+    borderRadius: '15px',
+    backgroundColor: 'rgba(3, 127, 140, .3)',
+    margin: '0 0 10px 0',
+  };
+
+  const styleDiv2 = {
+    borderRadius: '0 0 15px 15px',
+    backgroundColor: 'rgba(3, 127, 140, .3)',
+  };
+
   return (
     <>
       <Card style={ { width: '90%', margin: '15px auto' } }>
         <Card.Body>
           <Card.Img
+            style={ { boxShadow: '0 0 5px' } }
             data-testid="recipe-photo"
             width="150px"
             src={ strDrinkThumb }
             alt="tumb"
           />
-          <div className="card-details-text" data-testid="recipe-title">{strDrink}</div>
-          <div className="card-details-text">{strCategory}</div>
-          <div className="card-details-text" data-testid="recipe-category">{strAlcoholic}</div>
-          <div className="card-details-share" style={ { display: 'flex', justifyContent: 'space-around' } }>
+          <div style={ styleDiv2 }>
+            <div className="card-details-text" data-testid="recipe-title">{strDrink}</div>
+            <div className="card-details-text">{strCategory}</div>
+            <div
+              className="card-details-text"
+              data-testid="recipe-category"
+            >
+              {strAlcoholic}
+            </div>
+          </div>
+          <div
+            className="card-details-share"
+            style={ { display: 'flex', justifyContent: 'space-around' } }
+          >
             <ButtonFavorite objData={ drinkDetail } />
             <ButtonShare path={ window.location.href } testid="share-btn" />
           </div>
-          <h4 style={ { padding: '0 10px 0 10px' } }>Ingredients</h4>
-          <div style={ { textAlign: 'center', fontStyle: 'italic' } }>
-            { objIngred.map((e, i) => (
-              <div
-                style={ { marginBottom: '0' } }
-                data-testid={ `${i}-ingredient-name-and-measure` }
-                key={ i }
-              >
-                { objMeasure[i] ? `${e} - ${objMeasure[i]}` : `${e}`}
-              </div>
-            ))}
+          <div
+            style={ styleDiv }
+          >
+            <h4 style={ { padding: '0 10px 0 10px' } }>Ingredients</h4>
+            <div style={ { textAlign: 'center', fontStyle: 'italic' } }>
+              { objIngred.map((e, i) => (
+                <div
+                  style={ { marginBottom: '0' } }
+                  data-testid={ `${i}-ingredient-name-and-measure` }
+                  key={ i }
+                >
+                  { objMeasure[i] ? `${e} - ${objMeasure[i]}` : `${e}`}
+                </div>
+              ))}
+            </div>
           </div>
           <h4 style={ { padding: '0 10px 0 10px' } }>Instructions</h4>
           <div data-testid="instructions">{strInstructions}</div>

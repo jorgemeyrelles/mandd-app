@@ -20,7 +20,7 @@ export default function DrinkExplorer() {
 
   return (
     <>
-      <Header title="Explorar Bebidas" />
+      <Header title="Explore Drinks" />
       <section className="container-buttons">
         <Button
           className="button-style"
@@ -30,7 +30,7 @@ export default function DrinkExplorer() {
           type="button"
           onClick={ () => history.push('/explorar/bebidas/ingredientes') }
         >
-          Por Ingredientes
+          By Ingredients
         </Button>
         <Button
           className="button-style"
@@ -40,7 +40,7 @@ export default function DrinkExplorer() {
           type="button"
           onClick={ () => history.push(`/bebidas/${idRandomDrink}`) }
         >
-          Me Surpreenda!
+          Surprise Me!
         </Button>
       </section>
       <Footer />

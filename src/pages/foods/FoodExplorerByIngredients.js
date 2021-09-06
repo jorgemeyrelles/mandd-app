@@ -6,12 +6,7 @@ import CardsListByIngredient from '../../components/CardsListByIngredient';
 export default function FoodExplorerByIngredients() {
   return (
     <>
-      <Header title="Explorar Ingredientes" />
-      <div
-        className="container-header-filters"
-        style={ { zIndex: '1' } }
-      >
-      </div>
+      <Header title="Explore by Ingredients" />
       <CardsListByIngredient />
       <Footer />
     </>

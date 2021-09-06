@@ -27,8 +27,14 @@ export default function Header(props) {
   );
 
   return (
-    <section className="container-header-filters" style={ { zIndex: '2' } }>
-      <header className="container-header">
+    <section
+      className="container-header-filters"
+      style={ { borderRadius: '0 0 15px 15px', zIndex: '2' } }
+    >
+      <header
+        className="container-header"
+        style={ { background: '0', display: 'flex', paddingBottom: 0 } }
+      >
         <div
           style={ { width: '30px' } }
           role="button"

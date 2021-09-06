@@ -14,6 +14,7 @@ function Footer() {
         bottom: 0,
         position: 'fixed',
         width: '100%',
+        borderRadius: '15px 15px 0 0',
       } }
       data-testid="footer"
     >

@@ -69,7 +69,7 @@ export default function RecipeInProgress({ location }) {
       </InProgressProvider>
     );
   }
-  return <div>Carregando...</div>;
+  return <div>Loading...</div>;
 }
 
 RecipeInProgress.propTypes = {

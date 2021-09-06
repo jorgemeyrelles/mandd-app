@@ -7,11 +7,6 @@ export default function DrinkExplorerByIngredients() {
   return (
     <>
       <Header title="Explorar Ingredientes" />
-      <div
-        className="container-header-filters"
-        style={ { zIndex: '1' } }
-      >
-      </div>
       <CardsListByIngredient />
       <Footer />
     </>

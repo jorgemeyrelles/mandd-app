@@ -41,6 +41,12 @@ function MealDetailCard() {
     backgroundColor: 'rgba(3, 127, 140, .3)',
   };
 
+  const styleDiv2 = {
+    borderRadius: '15px',
+    backgroundColor: 'rgba(3, 127, 140, .3)',
+    margin: '10px 0 10px 0',
+  };
+
   const {
     // idMeal,
     strArea,
@@ -104,7 +110,7 @@ function MealDetailCard() {
             <ButtonShare path={ window.location.href } testid="share-btn" />
           </div>
           <div
-            style={ { borderRadius: '15px', backgroundColor: 'rgba(3, 127, 140, .3)' } }
+            style={ styleDiv2 }
           >
             <h4 style={ { padding: '0 10px 0 10px' } }>Ingredients</h4>
             <div style={ { textAlign: 'center', fontStyle: 'italic' } }>

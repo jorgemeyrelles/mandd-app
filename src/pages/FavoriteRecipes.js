@@ -29,7 +29,7 @@ export default function FavoriteRecipes() {
 
   return (
     <>
-      <Header title="Receitas Favoritas" />
+      <Header title="Favorite recipes" />
       <ToggleButtonGroup
         style={ { marginTop: '80px' } }
         className="buttons-filter-favor"

@@ -11,7 +11,7 @@ export default function Profile() {
 
   return (
     <div>
-      <Header title="Perfil" />
+      <Header title="Profile" />
       <section className="container-profile">
         <div style={ { display: 'flex', justifyContent: 'center' } }>
           <h5 data-testid="profile-email">{ email }</h5>
@@ -24,7 +24,7 @@ export default function Profile() {
           data-testid="profile-done-btn"
           onClick={ () => history.push('/receitas-feitas') }
         >
-          Receitas Feitas
+          Done recipes
         </Button>
         <Button
           className="button-style"
@@ -34,18 +34,18 @@ export default function Profile() {
           data-testid="profile-favorite-btn"
           onClick={ () => history.push('/receitas-favoritas') }
         >
-          Receitas Favoritas
+          Favorite recipes
         </Button>
         <Button
           style={ { background: '#333333' } }
           className="button-style"
-          variant="secondary"
+          variant="dark"
           size="lg"
           type="button"
           data-testid="profile-logout-btn"
           onClick={ () => { localStorage.clear(); history.push('/'); } }
         >
-          Sair
+          Exit
         </Button>
       </section>
       <Footer />

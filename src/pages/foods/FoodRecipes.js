@@ -11,9 +11,12 @@ export default function FoodRecipes() {
         className="container-header-filters"
         style={ { background: '0', display: 'flex', padding: 0 } }
       >
-        <div className="container-header" style={ { justifyContent: 'space-between' } }>
+        <div
+          className="container-header"
+          style={ { justifyContent: 'space-between', borderRadius: '0 0 15px 15px' } }
+        >
           <h3 style={ { marginBottom: '0', color: '#e9e8e8' } }>
-            Detalhes da comida
+            Food details
           </h3>
           <button
             type="button"

@@ -60,7 +60,7 @@ export default function CardsListByIngredient() {
         >
           <Card.Body
             style={
-              { display: 'flex', alignItems: 'center', justifyContent: 'space-around' }
+              { display: 'flex', alignItems: 'center', justifyContent: 'space-between' }
             }
           >
             <img

@@ -4,7 +4,7 @@
 } */
 
 body {
-  background-color: #fff;
+  background-color: rgba(242, 117, 7, .35);
   min-height: 640px;
 }
 
@@ -113,10 +113,10 @@ body {
 
 .container-explore-by-area {
   background: #ff900d;
-  padding: 10px;
+  padding: 27px 0 10px 0;
   position: fixed;
   text-align: center;
-  top: 60px;
+  top: 43px;
   width: 100%;
   z-index: 1;
 }
@@ -198,9 +198,11 @@ body {
 }
 
 .main-login {
-  background: url(./images/back.jpg) no-repeat center bottom;
+  /* background: url(./images/back.jpg) no-repeat center bottom; */
   background-size: 80%;
   text-align: center;
+  position: 'relative';
+  bottom: '0'
 }
 
 @keyframes shake {

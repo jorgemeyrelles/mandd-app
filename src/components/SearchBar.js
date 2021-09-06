@@ -109,7 +109,7 @@ export default function SearchBar(props) {
           type="button"
           onClick={ () => handleClick() }
         >
-          Buscar
+          Search
         </Button>
       </Form>
       <form
@@ -127,7 +127,7 @@ export default function SearchBar(props) {
             value="filter.php?i="
             onChange={ (e) => setRadio(e.target.value) }
           />
-          Ingrediente
+          Ingredient
         </label>
         <label htmlFor="name" style={ { margin: '5px' } }>
           <input
@@ -139,7 +139,7 @@ export default function SearchBar(props) {
             value="search.php?s="
             onChange={ (e) => setRadio(e.target.value) }
           />
-          Nome
+          Name
         </label>
         <label htmlFor="first-letter" style={ { margin: '5px' } }>
           <input
@@ -151,7 +151,7 @@ export default function SearchBar(props) {
             value="search.php?f="
             onChange={ (e) => setRadio(e.target.value) }
           />
-          Primeira letra
+          First letter
         </label>
       </form>
     </nav>

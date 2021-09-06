@@ -20,7 +20,7 @@ export default function FoodExplorer() {
 
   return (
     <>
-      <Header title="Explorar Comidas" />
+      <Header title="Explore Foods" />
       <section className="container-buttons">
         <Button
           style={ { fontSize: '18px' } }
@@ -31,7 +31,7 @@ export default function FoodExplorer() {
           onClick={ () => history.push('/explorar/comidas/ingredientes') }
           data-testid="explore-by-ingredient"
         >
-          Por Ingredientes
+          By Ingredients
         </Button>
         <Button
           style={ { fontSize: '18px' } }
@@ -42,7 +42,7 @@ export default function FoodExplorer() {
           type="button"
           onClick={ () => history.push('/explorar/comidas/area') }
         >
-          Por Local de Origem
+          By Country
         </Button>
         <Button
           style={ { fontSize: '18px' } }
@@ -53,7 +53,7 @@ export default function FoodExplorer() {
           type="button"
           onClick={ () => history.push(`/comidas/${idRandomFood}`) }
         >
-          Me Surpreenda!
+          Surprise Me!
         </Button>
       </section>
       <Footer />

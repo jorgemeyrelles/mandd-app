@@ -35,7 +35,7 @@ export default function FoodExplorerByCountry() {
   // por enquanto, deixar select e options por conta do teste
   return (
     <section className="container-explore-by-area">
-      <label htmlFor="explore-by-area" className="container-explore-by-area-buttons">
+      <label htmlFor="explore-by-area" className="container-explore-by-area-buttons ">
         <select
           style={ { width: '130px' } }
           data-testid="explore-by-area-dropdown"

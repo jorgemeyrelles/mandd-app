@@ -21,7 +21,7 @@ export default function DoneRecipes() {
   const handleChange = (val) => setType(val);
   return (
     <div>
-      <Header title="Receitas Feitas" search={ false } />
+      <Header title="Done recipes" search={ false } />
       <section className="container-buttons" style={ { marginTop: '80px' } }>
         <ToggleButtonGroup
           type="radio"

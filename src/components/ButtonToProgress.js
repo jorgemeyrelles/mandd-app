@@ -64,7 +64,7 @@ function ButtonToProgress(props) {
           type="button"
           onClick={ handleClick }
         >
-          { progress ? 'Continuar Receita' : 'Iniciar Receita' }
+          { progress ? 'Continue preparation' : 'Start preparation' }
         </Button>
         {
           toRedirect

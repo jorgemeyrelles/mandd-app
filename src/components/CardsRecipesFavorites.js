@@ -3,7 +3,7 @@ import { Card } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import { useHistory } from 'react-router';
 import ButtonShare from './ButtonShare';
-import blackHeartIcon from '../images/blackHeartIcon.svg';
+// import blackHeartIcon from '../images/blackHeartIcon.svg';
 
 function CardsRecipesFavorites(props) {
   const { index, recipe, handleDisfavor } = props;
@@ -15,6 +15,8 @@ function CardsRecipesFavorites(props) {
     alignItems: 'center',
     textAlign: 'center',
   };
+
+  const blackHeartIcon2 = 'https://icongr.am/entypo/heart.svg?size=31&color=e33535';
 
   const onClickTitleOrImage = () => (
     recipe.type === 'comida' ? history.push(`/comidas/${id}`)
@@ -32,7 +34,7 @@ function CardsRecipesFavorites(props) {
         style={ { background: 'none', opacity: 'none', border: 'none' } }
       >
         <img
-          src={ blackHeartIcon }
+          src={ blackHeartIcon2 }
           alt="ícone de desfavoritar"
           data-testid={ `${index}-horizontal-favorite-btn` }
         />

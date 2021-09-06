@@ -8,7 +8,7 @@ export default function Explorer() {
   const history = useHistory();
   return (
     <>
-      <Header title="Explorar" />
+      <Header title="Explore" />
       <section className="container-buttons">
         <Button
           variant="dark"
@@ -18,7 +18,7 @@ export default function Explorer() {
           data-testid="explore-food"
           onClick={ () => history.push('/explorar/comidas') }
         >
-          Explorar Comidas
+          Explore Foods
         </Button>
         <Button
           variant="dark"
@@ -28,7 +28,7 @@ export default function Explorer() {
           data-testid="explore-drinks"
           onClick={ () => history.push('/explorar/bebidas') }
         >
-          Explorar Bebidas
+          Explore Drinks
         </Button>
       </section>
       <Footer />

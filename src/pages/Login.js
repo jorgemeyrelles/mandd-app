@@ -38,7 +38,7 @@ function Login() {
 
   const styleText = {
     fontWeight: 'bold',
-    color: 'white',
+    color: 'black',
     textShadow: '0 0 6px grey',
   };
 
