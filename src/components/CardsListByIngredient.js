@@ -78,7 +78,7 @@ export default function CardsListByIngredient() {
           </Card.Body>
         </Card>
       )) }
-      { redirectTo && <Redirect to={ `/${path}` } /> }
+      { redirectTo && <Redirect to={ `/mandd-app/${path}` } /> }
     </div>
   );
 
