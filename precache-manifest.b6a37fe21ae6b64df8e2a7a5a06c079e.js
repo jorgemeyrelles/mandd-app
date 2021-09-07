@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d9a6cdb950f5a3841652dc63ebe1fc4b",
+    "revision": "88d9464d45491772affb26b2714e6ba2",
     "url": "/mandd-app/index.html"
   },
   {
-    "revision": "9eb6cc125d14bc2ff512",
+    "revision": "5f6e16dcf628d2f77db0",
     "url": "/mandd-app/static/css/2.38a25f08.chunk.css"
   },
   {
-    "revision": "eec121424ab8618a5d38",
+    "revision": "8b158b5c6cdd43c12047",
     "url": "/mandd-app/static/css/main.f2e69c34.chunk.css"
   },
   {
-    "revision": "9eb6cc125d14bc2ff512",
-    "url": "/mandd-app/static/js/2.b31a5282.chunk.js"
+    "revision": "5f6e16dcf628d2f77db0",
+    "url": "/mandd-app/static/js/2.f281939b.chunk.js"
   },
   {
     "revision": "57fb86a905f06aed4b5091745659b335",
-    "url": "/mandd-app/static/js/2.b31a5282.chunk.js.LICENSE.txt"
+    "url": "/mandd-app/static/js/2.f281939b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "eec121424ab8618a5d38",
-    "url": "/mandd-app/static/js/main.8091072d.chunk.js"
+    "revision": "8b158b5c6cdd43c12047",
+    "url": "/mandd-app/static/js/main.5284ab3d.chunk.js"
   },
   {
     "revision": "cb17172ae9f7b5fc13dd",
