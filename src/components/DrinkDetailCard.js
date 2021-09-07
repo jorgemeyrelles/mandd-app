@@ -71,7 +71,21 @@ function DrinkDetailCard() {
     backgroundColor: 'rgba(3, 127, 140, .3)',
   };
 
-  return (
+  const isLoading = () => (
+    <div
+      style={ {
+        marginTop: '175px',
+        left: '45%',
+        position: 'relative',
+      } }
+      className="spinner-border text-danger"
+      role="status"
+    >
+      <span className="visually-hidden">.</span>
+    </div>
+  );
+
+  const card = () => (
     <>
       <Card style={ { width: '90%', margin: '15px auto' } }>
         <Card.Body>
@@ -131,6 +145,10 @@ function DrinkDetailCard() {
       </Card>
       <ButtonToProgress data={ drinkDetail } />
     </>
+  );
+
+  return (
+    objMeasure.length === 0 ? isLoading() : card()
   );
 }
 

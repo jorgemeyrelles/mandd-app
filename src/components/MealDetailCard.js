@@ -74,7 +74,21 @@ function MealDetailCard() {
     return undefined;
   }).filter((i) => i !== undefined);
 
-  return (
+  const isLoading = () => (
+    <div
+      style={ {
+        marginTop: '175px',
+        left: '45%',
+        position: 'relative',
+      } }
+      className="spinner-border text-danger"
+      role="status"
+    >
+      <span className="visually-hidden">.</span>
+    </div>
+  );
+
+  const card = () => (
     <>
       <Card style={ { width: '95%', margin: '15px auto' } }>
         <Card.Body>
@@ -146,6 +160,10 @@ function MealDetailCard() {
       </Card>
       <ButtonToProgress data={ mealDetail } />
     </>
+  );
+
+  return (
+    objMeasure.length === 0 ? isLoading() : card()
   );
 }
 

@@ -4,6 +4,7 @@ import DrinkDetailCard from '../../components/DrinkDetailCard';
 
 export default function DrinkRecipes() {
   const history = useHistory();
+
   return (
     <div>
       <div

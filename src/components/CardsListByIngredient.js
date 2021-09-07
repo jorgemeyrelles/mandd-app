@@ -45,7 +45,7 @@ export default function CardsListByIngredient() {
     setRedirectTo(true);
   };
 
-  return (
+  const card = () => (
     <div style={ { position: 'relative', margin: '75px 0 70px 0' } }>
       { imge.map((e, i) => (
         <Card
@@ -80,6 +80,22 @@ export default function CardsListByIngredient() {
       )) }
       { redirectTo && <Redirect to={ `/${path}` } /> }
     </div>
+  );
+
+  const isLoading = () => (
+    <div className="d-flex justify-content-center">
+      <div
+        style={ { marginTop: '175px' } }
+        className="spinner-border text-danger"
+        role="status"
+      >
+        <span className="visually-hidden">.</span>
+      </div>
+    </div>
+  );
+
+  return (
+    imge.length === 0 ? isLoading() : card()
   );
 }
 CardsListByIngredient.propTypes = {

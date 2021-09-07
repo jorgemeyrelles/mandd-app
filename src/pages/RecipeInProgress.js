@@ -69,7 +69,17 @@ export default function RecipeInProgress({ location }) {
       </InProgressProvider>
     );
   }
-  return <div>Loading...</div>;
+  return (
+    <div className="d-flex justify-content-center">
+      <div
+        style={ { marginTop: '175px' } }
+        className="spinner-border text-danger"
+        role="status"
+      >
+        <span className="visually-hidden">.</span>
+      </div>
+    </div>
+  );
 }
 
 RecipeInProgress.propTypes = {
