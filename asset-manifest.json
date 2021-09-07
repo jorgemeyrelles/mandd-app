@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/mandd-app/static/css/main.f2e69c34.chunk.css",
-    "main.js": "/mandd-app/static/js/main.73dfa97c.chunk.js",
-    "main.js.map": "/mandd-app/static/js/main.73dfa97c.chunk.js.map",
+    "main.js": "/mandd-app/static/js/main.7441daed.chunk.js",
+    "main.js.map": "/mandd-app/static/js/main.7441daed.chunk.js.map",
     "runtime-main.js": "/mandd-app/static/js/runtime-main.6d2b72ac.js",
     "runtime-main.js.map": "/mandd-app/static/js/runtime-main.6d2b72ac.js.map",
     "static/css/2.38a25f08.chunk.css": "/mandd-app/static/css/2.38a25f08.chunk.css",
     "static/js/2.f281939b.chunk.js": "/mandd-app/static/js/2.f281939b.chunk.js",
     "static/js/2.f281939b.chunk.js.map": "/mandd-app/static/js/2.f281939b.chunk.js.map",
     "index.html": "/mandd-app/index.html",
-    "precache-manifest.44424750421e739fdb43ecb46f75d18d.js": "/mandd-app/precache-manifest.44424750421e739fdb43ecb46f75d18d.js",
+    "precache-manifest.45a1e917f0f23c9e3c52be0ae313b8b7.js": "/mandd-app/precache-manifest.45a1e917f0f23c9e3c52be0ae313b8b7.js",
     "service-worker.js": "/mandd-app/service-worker.js",
     "static/css/2.38a25f08.chunk.css.map": "/mandd-app/static/css/2.38a25f08.chunk.css.map",
     "static/css/main.f2e69c34.chunk.css.map": "/mandd-app/static/css/main.f2e69c34.chunk.css.map",
@@ -28,6 +28,6 @@
     "static/css/2.38a25f08.chunk.css",
     "static/js/2.f281939b.chunk.js",
     "static/css/main.f2e69c34.chunk.css",
-    "static/js/main.73dfa97c.chunk.js"
+    "static/js/main.7441daed.chunk.js"
   ]
 }

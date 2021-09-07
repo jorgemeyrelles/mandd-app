@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f43b3f4fe03f1f7bd9390bbf871899c9",
+    "revision": "72c750de0bf9732a222aee5872822e5d",
     "url": "/mandd-app/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mandd-app/static/css/2.38a25f08.chunk.css"
   },
   {
-    "revision": "f6d3b7eb1178732ef329",
+    "revision": "e3fe667aac623b90e1cb",
     "url": "/mandd-app/static/css/main.f2e69c34.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mandd-app/static/js/2.f281939b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f6d3b7eb1178732ef329",
-    "url": "/mandd-app/static/js/main.73dfa97c.chunk.js"
+    "revision": "e3fe667aac623b90e1cb",
+    "url": "/mandd-app/static/js/main.7441daed.chunk.js"
   },
   {
     "revision": "cb17172ae9f7b5fc13dd",
