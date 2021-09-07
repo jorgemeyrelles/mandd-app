@@ -57,7 +57,19 @@ export default function Cards(props) {
     }
   }, [recipe, type]);
 
-  return (
+  const isLoading = () => (
+    <div className="d-flex justify-content-center">
+      <div
+        style={ { marginTop: '175px' } }
+        className="spinner-border text-danger"
+        role="status"
+      >
+        <span className="visually-hidden">.</span>
+      </div>
+    </div>
+  );
+
+  const card = () => (
     <Card
       style={ styleCard }
       data-testid={ `${index}-recipe-card` }
@@ -80,6 +92,10 @@ export default function Cards(props) {
         </div>
       </Card.Body>
     </Card>
+  );
+
+  return (
+    source === undefined ? isLoading() : card()
   );
 }
 

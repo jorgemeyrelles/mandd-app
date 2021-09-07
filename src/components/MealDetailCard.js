@@ -90,7 +90,7 @@ function MealDetailCard() {
 
   const card = () => (
     <>
-      <Card style={ { width: '95%', margin: '15px auto' } }>
+      <Card style={ { width: '340px', margin: '15px auto' } }>
         <Card.Body>
           <Card.Img
             style={ { boxShadow: '0 0 5px' } }

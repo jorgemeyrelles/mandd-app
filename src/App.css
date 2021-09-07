@@ -48,7 +48,7 @@ body {
 }
 
 .container-header-filters {
-  background: #F27507;
+  background: #F2490C;
   padding: 0 0 10px;
   position: fixed;
   top: 0;
@@ -203,34 +203,4 @@ body {
   text-align: center;
   position: 'relative';
   bottom: '0'
-}
-
-@keyframes shake {
-
-  0% {
-    transform: rotate(5deg);
-  }
-
-  50% {
-    transform: rotate(-5deg);
-  }
-
-  100% {
-    transform: rotate(5deg);
-  }
-}
-
-@keyframes clink {
-
-  0% {
-    transform: rotate(-10deg);
-  }
-
-  50% {
-    transform: rotate(20deg);
-  }
-
-  100% {
-    transform: rotate(-10deg);
-  }
 }

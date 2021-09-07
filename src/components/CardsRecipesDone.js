@@ -55,7 +55,7 @@ export default function CardsRecipesDone(props) {
         </Card.Text>
         <div style={ cardTitle }>
           <Card.Title
-            style={ { fontWeight: 'bold', margin: '10px 70px' } }
+            style={ { width: '100px', fontWeight: 'bold', margin: '10px 70px' } }
             data-testid={ `${index}-horizontal-name` }
             role="button"
             tabIndex="0"
@@ -66,7 +66,7 @@ export default function CardsRecipesDone(props) {
           </Card.Title>
           <ButtonShare
             testid={ `${index}-horizontal-share-btn` }
-            path={ `${href}/${type}s/${id}` }
+            path={ `mandd-app/${href}/${type}s/${id}` }
           />
         </div>
         <div style={ cardTitle }>

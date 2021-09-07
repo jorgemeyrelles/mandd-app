@@ -9,7 +9,7 @@ export default function CardsListByIngredient() {
   const [ingredName, setIngredName] = useState([]);
   const [imge, setImge] = useState([]);
   const [redirectTo, setRedirectTo] = useState(false);
-  const path = window.location.pathname.split('/')[2];
+  const path = window.location.pathname.split('/')[3];
   const { setIngred } = useContext(SearchBarContext);
   const url = path === 'bebidas' ? 'thecocktaildb' : 'themealdb';
 
@@ -25,7 +25,7 @@ export default function CardsListByIngredient() {
     };
 
     getRecipes();
-  }, [path]);
+  }, [path, url]);
 
   useEffect(() => {
     const getCategories = async () => {
